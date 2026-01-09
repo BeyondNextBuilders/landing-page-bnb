@@ -1,10 +1,10 @@
 {
-  "name": "my-v0-project",
-  "version": "0.1.0",
+  "name": "landing-page-bnb",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "lint": "eslint .",
     "start": "next start"
   },
@@ -59,7 +59,6 @@
     "sonner": "^1.7.4",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
-    "vaul": "^0.9.9",
     "zod": "3.25.76"
   },
   "devDependencies": {

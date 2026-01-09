@@ -31,9 +31,9 @@ export function Team() {
                 href={member.linkedin_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full max-w-md"
+                className="block w-full max-w-lg"
               >
-                <Card className="bg-primary w-full border-2 border-tertiary overflow-hidden group hover:border-accent transition-all duration-300 hover:shadow-2xl cursor-pointer">
+                <Card className="bg-primary w-full border-2 border-tertiary overflow-hidden group hover:border-accent transition-all duration-300 hover:shadow-2xl  cursor-pointer">
                   <div className="aspect-square overflow-hidden relative">
                     <Image
                       src={member.image_url}
