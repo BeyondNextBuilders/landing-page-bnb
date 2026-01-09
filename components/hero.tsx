@@ -93,13 +93,13 @@ export function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto justify-items-center">
             {[
-              { value: "50+", label: t.hero.projectsDelivered },
-              { value: "98%", label: t.hero.clientSatisfaction },
+              // { value: "50+", label: t.hero.projectsDelivered },
+              // { value: "98%", label: t.hero.clientSatisfaction },
               { value: "24/7", label: t.hero.supportAvailable },
             ].map((stat, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center justify-items-center">
                 <div className="text-4xl md:text-5xl font-bold text-accent-cyan mb-2">{stat.value}</div>
                 <div className="text-cream/80 font-medium">{stat.label}</div>
               </div>

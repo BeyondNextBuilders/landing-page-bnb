@@ -42,14 +42,14 @@ export function Footer() {
           <div>
             <h3 className="text-cream font-bold mb-4">{language === "en" ? "Follow Us" : "Urmărește-ne"}</h3>
             <div className="flex gap-3">
-              {[Linkedin, Github, Twitter].map((Icon, index) => (
-                <button
-                  key={index}
-                  className="w-10 h-10 rounded-full bg-accent/10 hover:bg-accent/20 flex items-center justify-center transition-colors"
-                >
-                  <Icon className="w-5 h-5 text-accent" />
-                </button>
-              ))}
+              <a
+                href="https://www.linkedin.com/company/109443643/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-accent/10 hover:bg-accent/20 flex items-center justify-center transition-colors"
+              >
+                <Linkedin className="w-5 h-5 text-accent" />
+              </a>
             </div>
           </div>
         </div>

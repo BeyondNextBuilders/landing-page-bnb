@@ -57,7 +57,7 @@ export const translations = {
     },
     team: {
       badge: "OUR TEAM",
-      title: "Meet the Experts Behind Your Success",
+      title: "Meet the Core Team",
       description: "A dedicated team of professionals committed to delivering excellence",
       members: [
         { name: "Alex Johnson", role: "CEO & Lead Architect", bio: "15+ years building enterprise solutions" },

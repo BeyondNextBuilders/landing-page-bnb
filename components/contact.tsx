@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, Send } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import { useLanguage } from "@/lib/language-context"
 import { translations } from "@/lib/translations"
@@ -129,20 +129,15 @@ export function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             {[
-              { icon: Mail, title: t.contact.emailUs, lines: ["contact@bnbsolutions.com", "support@bnbsolutions.com"] },
-              { icon: Phone, title: t.contact.callUs, lines: ["+1 (555) 123-4567", "Mon-Fri, 9AM-6PM EST"] },
-              {
-                icon: MapPin,
-                title: t.contact.visitUs,
-                lines: ["123 Tech Boulevard, Suite 400", "San Francisco, CA 94105"],
-              },
+              { icon: Mail, title: t.contact.emailUs, lines: ["contact@bnbsolutions.com"] },
+              { icon: Phone, title: t.contact.callUs, lines: ["Mon-Fri, 9AM-6PM EST"] },
             ].map((info, index) => {
               const IconComponent = info.icon
               return (
                 <div key={index}>
                   <Card className="p-8 bg-primary border-2 border-tertiary">
                     <div className="flex items-start gap-4">
-                      <div className="bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
                         <IconComponent className="w-6 h-6 text-accent" />
                       </div>
                       <div>
@@ -150,7 +145,6 @@ export function Contact() {
                         {info.lines.map((line, lineIndex) => (
                           <p key={lineIndex} className="text-cream/80 leading-relaxed">
                             {line}
-                            {lineIndex === 0 && info.icon === MapPin && <br />}
                           </p>
                         ))}
                       </div>
