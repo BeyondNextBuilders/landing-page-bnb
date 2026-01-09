@@ -20,14 +20,12 @@ export function Footer() {
               className="h-16 md:h-20 w-auto mb-4"
             />
             <p className="text-cream/70 leading-relaxed max-w-md">
-              {language === "en"
-                ? "Building innovative software solutions that drive business growth and digital transformation."
-                : "Construim soluții software inovatoare care stimulează creșterea afacerii și transformarea digitală."}
+              Building innovative software solutions that drive business growth and digital transformation.
             </p>
           </div>
 
           <div>
-            <h3 className="text-cream font-bold mb-4">{language === "en" ? "Quick Links" : "Link-uri Rapide"}</h3>
+            <h3 className="text-cream font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               {["services", "team", "contact"].map((section) => (
                 <li key={section}>
@@ -40,7 +38,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-cream font-bold mb-4">{language === "en" ? "Follow Us" : "Urmărește-ne"}</h3>
+            <h3 className="text-cream font-bold mb-4">Follow Us</h3>
             <div className="flex gap-3">
               <a
                 href="https://www.linkedin.com/company/109443643/"
@@ -56,9 +54,7 @@ export function Footer() {
 
         <div className="border-t border-tertiary pt-8 text-center">
           <p className="text-cream/60">
-            {language === "en"
-              ? `© ${new Date().getFullYear()} BNB Solutions. All rights reserved.`
-              : `© ${new Date().getFullYear()} BNB Solutions. Toate drepturile rezervate.`}
+            © {new Date().getFullYear()} BNB Solutions. All rights reserved.
           </p>
         </div>
       </div>

@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { LanguageSwitcher } from "./language-switcher"
 import { useLanguage } from "@/lib/language-context"
 import { translations } from "@/lib/translations"
 
@@ -63,9 +62,6 @@ export function Header() {
               </button>
             ))}
             <div>
-              <LanguageSwitcher />
-            </div>
-            <div>
               <Button
                 onClick={() => scrollToSection("contact")}
                 className="bg-accent-cyan text-navy-darkest hover:bg-accent-cyan/90 font-bold text-lg px-6 py-6"
@@ -92,9 +88,6 @@ export function Header() {
                   {t.nav[section as keyof typeof t.nav]}
                 </button>
               ))}
-              <div>
-                <LanguageSwitcher />
-              </div>
               <div>
                 <Button
                   onClick={() => scrollToSection("contact")}
