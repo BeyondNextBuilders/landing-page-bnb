@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
 import { notFound } from "next/navigation"
 import { getAllSlugs, getPostBySlug, markdownToHtml } from "@/lib/blog"
 import { Navbar } from "@/components/navbar"
@@ -88,6 +89,22 @@ export default async function BlogPostPage({ params }: PageProps) {
               prose-td:text-foreground/80"
             dangerouslySetInnerHTML={{ __html: htmlContent }}
           />
+
+          {/* Consultation CTA */}
+          <div className="mt-16 rounded-xl border border-hyper-cyan/30 bg-hyper-cyan/5 px-6 py-8 text-center">
+            <p className="text-lg font-semibold text-foreground">
+              Get your consultation right now
+            </p>
+            <Button
+              asChild
+              className="mt-4 bg-hyper-cyan text-primary font-bold px-8 py-3 text-sm h-auto shadow-lg shadow-hyper-cyan/30 hover:bg-hyper-cyan/85 hover:shadow-xl hover:shadow-hyper-cyan/40 transition-all"
+            >
+              <Link href="https://calendly.com/office-beyondnextbuilders/30min" target="_blank" rel="noopener noreferrer">
+                Schedule a Call
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </article>
       <Footer />
