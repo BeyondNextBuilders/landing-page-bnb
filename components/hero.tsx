@@ -32,8 +32,8 @@ export function Hero() {
 
       {/* ── Content layer ── */}
       <div className="relative z-10">
-        <div className="min-h-[600px] lg:min-h-[700px]">
-          <div className="flex flex-col justify-center px-6 py-16 lg:pl-32 xl:pl-40 2xl:pl-48 lg:py-24 max-w-3xl">
+        <div className="mx-auto max-w-7xl min-h-[600px] lg:min-h-[700px]">
+          <div className="flex flex-col justify-center px-6 py-16 lg:px-8 lg:py-24 max-w-3xl">
             <h1 className="text-5xl font-bold leading-[1.08] tracking-tight text-black sm:text-6xl xl:text-[58px] 2xl:text-[62px]">
               Crafting Digital{" "}
               <span className="text-hyper-cyan">Excellence</span>
