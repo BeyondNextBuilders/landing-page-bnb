@@ -168,15 +168,11 @@ If your storefront looks great on a “perfect catalog” but falls apart in the
 2. **Custom strategy** — Section plan, data requirements, timeline, and success metrics
 3. **Implementation** — Build, ship, and iterate with measurable checkpoints
 
-### Get Your Homepage Plan
 
-**Schedule Your Free Strategy Session →**
-
-[Contact / booking link]
 
 ---
 
-## About [Your Company Name]
+## About Beyond Next Builders
 
 We build production-grade e-commerce experiences and custom software with a strong focus on measurable outcomes: conversion-ready UX, clean architecture, and automations that reduce manual work. We’re especially strong at connecting business rules (pricing, promos, inventory) to UI that stays reliable at scale.
 
@@ -184,5 +180,4 @@ We build production-grade e-commerce experiences and custom software with a stro
 - AI Automations & Machine Learning Solutions
 - SEO/GEO Optimization & Strategy
 - Custom Software Development
-- [Other key service]
 
