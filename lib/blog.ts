@@ -156,10 +156,41 @@ export function getPostBySlug(slug: string): BlogPost | null {
 }
 
 /**
+ * Strip the first # heading and first ## heading (non-TL;DR) from markdown
+ * so they aren't duplicated when rendering the body.
+ */
+function stripTitleAndSubtitle(markdown: string): string {
+  const lines = markdown.split("\n")
+  let strippedTitle = false
+  let strippedSubtitle = false
+
+  const filtered = lines.filter((line) => {
+    if (!strippedTitle && line.startsWith("# ") && !line.startsWith("## ")) {
+      strippedTitle = true
+      return false
+    }
+    if (
+      !strippedSubtitle &&
+      line.startsWith("## ") &&
+      !line.startsWith("### ") &&
+      !line.toLowerCase().includes("tl;dr")
+    ) {
+      strippedSubtitle = true
+      return false
+    }
+    return true
+  })
+
+  return filtered.join("\n")
+}
+
+/**
  * Convert markdown content to HTML string.
+ * Strips the title and subtitle headings to avoid duplication with the page header.
  */
 export async function markdownToHtml(markdown: string): Promise<string> {
-  const result = await remark().use(html, { sanitize: false }).process(markdown)
+  const cleaned = stripTitleAndSubtitle(markdown)
+  const result = await remark().use(html, { sanitize: false }).process(cleaned)
   return result.toString()
 }
 

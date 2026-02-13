@@ -40,20 +40,24 @@ export default async function BlogPostPage({ params }: PageProps) {
       <article className="bg-background pt-28 pb-24 lg:pt-36 lg:pb-32">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           {/* Back link */}
-          <Link
-            href="/blogs"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            All Posts
-          </Link>
+          <div className="mb-6">
+            <Link
+              href="/blogs"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              All Posts
+            </Link>
 
-          {/* Category badge */}
-          {post.category && (
-            <span className="mt-4 inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">
-              {post.category}
-            </span>
-          )}
+            {/* Category badge */}
+            {post.category && (
+              <div className="mt-3">
+                <span className="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">
+                  {post.category}
+                </span>
+              </div>
+            )}
+          </div>
 
           {/* Title & subtitle */}
           <h1 className="text-balance text-2xl font-bold leading-[1.2] tracking-tight text-foreground sm:text-3xl lg:text-4xl">
