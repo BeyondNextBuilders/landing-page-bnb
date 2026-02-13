@@ -42,7 +42,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           {/* Back link */}
           <Link
             href="/blogs"
-            className="mb-8 inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4" />
             All Posts
@@ -50,7 +50,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           {/* Category badge */}
           {post.category && (
-            <span className="mb-4 inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">
+            <span className="mt-4 inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">
               {post.category}
             </span>
           )}
