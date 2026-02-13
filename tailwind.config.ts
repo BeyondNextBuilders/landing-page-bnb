@@ -38,6 +38,10 @@ const config: Config = {
           foreground: 'hsl(var(--accent-foreground))',
         },
         'hyper-cyan': 'hsl(var(--hyper-cyan))',
+        cta: {
+          DEFAULT: 'hsl(var(--cta))',
+          foreground: 'hsl(var(--cta-foreground))',
+        },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',

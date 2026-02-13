@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import { socials } from "@/lib/socials"
 
 const footerLinks = {
   Services: [
@@ -76,13 +77,15 @@ export function Footer() {
             {`© ${new Date().getFullYear()} Beyond Next Builders. All rights reserved.`}
           </p>
           <div className="flex gap-6">
-            {["Twitter", "LinkedIn", "GitHub"].map((social) => (
+            {socials.map((social) => (
               <Link
-                key={social}
-                href="#"
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-xs text-primary-foreground/40 transition-colors hover:text-accent"
               >
-                {social}
+                {social.label}
               </Link>
             ))}
           </div>

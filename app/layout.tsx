@@ -13,6 +13,9 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: 'Beyond Next Builders | Custom Software Development',
   description: 'Premium custom software development services. We build scalable, high-performance digital solutions tailored to your business needs.',
+  icons: {
+    icon: '/logo_bnb.svg',
+  },
 }
 
 export default function RootLayout({

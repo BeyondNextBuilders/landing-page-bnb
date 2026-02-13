@@ -18,8 +18,8 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/60 bg-background/95 backdrop-blur-md">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-8">
-        <Link href="/" className="flex items-center gap-1.5">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-8 gap-8">
+        <Link href="/" className="flex items-center gap-1.5 flex-shrink-0">
           <Image
             src="/logo_bnb.png"
             alt="BNB Logo"
@@ -33,7 +33,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden items-center gap-8 lg:flex">
+        <div className="hidden items-center gap-8 lg:flex ml-auto">
           {navLinks.map((link) => (
             <Link
               key={link.label}
@@ -43,12 +43,9 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-        </div>
-
-        <div className="hidden lg:block">
           <Button
             asChild
-            className="bg-hyper-cyan text-primary font-bold px-6 shadow-md shadow-hyper-cyan/25 hover:bg-hyper-cyan/85 hover:shadow-lg hover:shadow-hyper-cyan/35 transition-all"
+            className="bg-cta text-cta-foreground font-bold px-6 shadow-md shadow-cta/25 hover:bg-cta/85 hover:shadow-lg hover:shadow-cta/35 transition-all"
           >
             <Link href="https://calendly.com/office-beyondnextbuilders/30min" target="_blank" rel="noopener noreferrer">Get in Touch</Link>
           </Button>
@@ -81,7 +78,7 @@ export function Navbar() {
             ))}
             <Button
               asChild
-              className="bg-hyper-cyan text-primary font-bold mt-2 w-full shadow-md shadow-hyper-cyan/25 hover:bg-hyper-cyan/85 hover:shadow-lg hover:shadow-hyper-cyan/35 transition-all"
+              className="bg-cta text-cta-foreground font-bold mt-2 w-full shadow-md shadow-cta/25 hover:bg-cta/85 hover:shadow-lg hover:shadow-cta/35 transition-all"
             >
               <Link href="https://calendly.com/office-beyondnextbuilders/30min" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
                 Get in Touch
