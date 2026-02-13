@@ -49,9 +49,9 @@ export function Hero() {
             <div className="mt-9">
               <Button
                 asChild
-                className="bg-black text-white hover:bg-black/90 font-semibold px-6 py-2.5 text-sm rounded-md h-auto"
+                className="bg-hyper-cyan text-primary font-bold px-8 py-3 text-sm rounded-md h-auto shadow-lg shadow-hyper-cyan/30 hover:bg-hyper-cyan/85 hover:shadow-xl hover:shadow-hyper-cyan/40 transition-all"
               >
-                <Link href="#contact">
+                <Link href="https://calendly.com/office-beyondnextbuilders/30min" target="_blank" rel="noopener noreferrer">
                   Schedule a Call
                 </Link>
               </Button>
