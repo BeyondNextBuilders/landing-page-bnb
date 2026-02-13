@@ -25,6 +25,8 @@
     --accent: 33 47% 66%;
     --accent-foreground: 216 70% 13%;
     --hyper-cyan: 180 100% 50%;
+    --cta: 180 100% 50%;
+    --cta-foreground: 216 70% 13%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 220 13% 91%;

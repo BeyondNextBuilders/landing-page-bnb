@@ -48,7 +48,7 @@ export function Navbar() {
         <div className="hidden lg:block">
           <Button
             asChild
-            className="bg-hyper-cyan text-primary font-bold px-6 shadow-md shadow-hyper-cyan/25 hover:bg-hyper-cyan/85 hover:shadow-lg hover:shadow-hyper-cyan/35 transition-all"
+            className="bg-cta text-cta-foreground font-bold px-6 shadow-md shadow-cta/25 hover:bg-cta/85 hover:shadow-lg hover:shadow-cta/35 transition-all"
           >
             <Link href="https://calendly.com/office-beyondnextbuilders/30min" target="_blank" rel="noopener noreferrer">Get in Touch</Link>
           </Button>
@@ -81,7 +81,7 @@ export function Navbar() {
             ))}
             <Button
               asChild
-              className="bg-hyper-cyan text-primary font-bold mt-2 w-full shadow-md shadow-hyper-cyan/25 hover:bg-hyper-cyan/85 hover:shadow-lg hover:shadow-hyper-cyan/35 transition-all"
+              className="bg-cta text-cta-foreground font-bold mt-2 w-full shadow-md shadow-cta/25 hover:bg-cta/85 hover:shadow-lg hover:shadow-cta/35 transition-all"
             >
               <Link href="https://calendly.com/office-beyondnextbuilders/30min" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
                 Get in Touch
