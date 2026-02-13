@@ -38,7 +38,7 @@ export function CtaSection() {
                 <div>
                   <p className="text-xs text-muted-foreground">Email us at</p>
                   <p className="text-sm font-medium text-foreground">
-                    hello@nexacraft.dev
+                    office@beyondnextubuilders.com
                   </p>
                 </div>
               </div>
