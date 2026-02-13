@@ -16,12 +16,12 @@ export function Founders() {
             className="group flex flex-col items-center transition-opacity hover:opacity-80"
           >
             {/* Founder image - overlaps top edge */}
-            <div className="relative -mt-14 mb-4 h-24 w-24 sm:h-28 sm:w-28 lg:h-32 lg:w-32">
+            <div className="relative -mt-14 mb-4 h-24 w-24 overflow-hidden rounded-full sm:h-28 sm:w-28 lg:h-32 lg:w-32">
               <Image
                 src={founder.image}
                 alt={founder.name}
                 fill
-                className="object-contain object-bottom"
+                className="object-cover"
               />
             </div>
             {/* Name & role */}
