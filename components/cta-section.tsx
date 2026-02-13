@@ -38,7 +38,7 @@ export function CtaSection() {
                 <div>
                   <p className="text-xs text-muted-foreground">Email us at</p>
                   <p className="text-sm font-medium text-foreground">
-                    hello@nexacraft.dev
+                    office@beyondnextbuilders.com
                   </p>
                 </div>
               </div>
@@ -49,18 +49,7 @@ export function CtaSection() {
                 <div>
                   <p className="text-xs text-muted-foreground">Call us at</p>
                   <p className="text-sm font-medium text-foreground">
-                    +1 (555) 123-4567
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-hyper-cyan/10">
-                  <MapPin className="h-5 w-5 text-hyper-cyan" />
-                </div>
-                <div>
-                  <p className="text-xs text-muted-foreground">Visit us at</p>
-                  <p className="text-sm font-medium text-foreground">
-                    San Francisco, CA
+                    +40 741 196 997
                   </p>
                 </div>
               </div>
