@@ -11,11 +11,10 @@ export function Navbar() {
 
   const navLinks = [
     { label: "Services", href: "#services" },
-    { label: "Technologies", href: "#technologies" },
     { label: "Industries", href: "#industries" },
     { label: "About", href: "#about" },
     { label: "Our Work", href: "#portfolio" },
-    { label: "Blog", href: "#blog" },
+    { label: "Blog", href: "/blogs" },
   ]
 
   return (
