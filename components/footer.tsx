@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { socials } from "@/constants/socials"
+import { socials } from "@/lib/socials"
 
 const footerLinks = {
   Services: [
