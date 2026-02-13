@@ -49,7 +49,7 @@ export function CtaSection() {
                 <div>
                   <p className="text-xs text-muted-foreground">Call us at</p>
                   <p className="text-sm font-medium text-foreground">
-                    +1 (555) 123-4567
+                    +40 741 196 997
                   </p>
                 </div>
               </div>
