@@ -57,12 +57,6 @@ export function CtaSection() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-hyper-cyan/10">
                   <MapPin className="h-5 w-5 text-hyper-cyan" />
                 </div>
-                <div>
-                  <p className="text-xs text-muted-foreground">Visit us at</p>
-                  <p className="text-sm font-medium text-foreground">
-                    San Francisco, CA
-                  </p>
-                </div>
               </div>
             </div>
           </div>
