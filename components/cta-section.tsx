@@ -56,84 +56,23 @@ export function CtaSection() {
             </div>
           </div>
 
-          {/* Right: Form */}
-          <div className="rounded-xl border border-border bg-muted p-8">
+          {/* Right: CTA */}
+          <div className="flex flex-col items-center justify-center rounded-xl border border-border bg-muted p-8 text-center">
             <h3 className="text-lg font-semibold text-foreground">
               Request a Consultation
             </h3>
-            <p className="mt-1 text-sm text-muted-foreground">
-              {"Fill out the form and we'll get back to you within 24 hours."}
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Please tell us about your requirements and add links to your business (LinkedIn or website).
             </p>
-            <form
-              className="mt-6 flex flex-col gap-5"
-              onSubmit={(e) => e.preventDefault()}
+            <Button
+              asChild
+              className="mt-8 bg-hyper-cyan text-primary font-bold px-10 py-3 text-base h-auto shadow-lg shadow-hyper-cyan/30 hover:bg-hyper-cyan/85 hover:shadow-xl hover:shadow-hyper-cyan/40 transition-all"
             >
-              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-                <div>
-                  <label
-                    htmlFor="firstName"
-                    className="block text-xs font-medium text-muted-foreground mb-1.5"
-                  >
-                    First Name
-                  </label>
-                  <input
-                    id="firstName"
-                    type="text"
-                    placeholder="John"
-                    className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-secondary focus:outline-none focus:ring-1 focus:ring-secondary"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="lastName"
-                    className="block text-xs font-medium text-muted-foreground mb-1.5"
-                  >
-                    Last Name
-                  </label>
-                  <input
-                    id="lastName"
-                    type="text"
-                    placeholder="Doe"
-                    className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-secondary focus:outline-none focus:ring-1 focus:ring-secondary"
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-xs font-medium text-muted-foreground mb-1.5"
-                >
-                  Work Email
-                </label>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="john@company.com"
-                  className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-secondary focus:outline-none focus:ring-1 focus:ring-secondary"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-xs font-medium text-muted-foreground mb-1.5"
-                >
-                  Tell us about your project
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  placeholder="Describe your project goals, timeline, and any specific requirements..."
-                  className="w-full resize-none rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-secondary focus:outline-none focus:ring-1 focus:ring-secondary"
-                />
-              </div>
-              <Button
-                type="submit"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold w-full"
-              >
-                Send Message
+              <Link href="https://calendly.com/office-beyondnextbuilders/30min" target="_blank" rel="noopener noreferrer">
+                Schedule a Call
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </form>
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

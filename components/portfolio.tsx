@@ -25,11 +25,6 @@ export function Portfolio() {
               className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all hover:shadow-xl hover:shadow-secondary/5"
             >
               <div className="p-6">
-                {post.category && (
-                  <span className="mb-3 inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">
-                    {post.category}
-                  </span>
-                )}
                 <div className="flex items-start justify-between gap-4">
                   <div className="min-w-0">
                     <h3 className="text-lg font-semibold leading-snug text-card-foreground">
@@ -46,9 +41,6 @@ export function Portfolio() {
 
                 {post.tldr && (
                   <div className="mt-4 rounded-lg bg-muted px-4 py-3">
-                    <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                      TL;DR
-                    </p>
                     <div className="text-sm leading-relaxed text-foreground/80 line-clamp-4">
                       {post.tldr.split("\n").filter(Boolean).slice(0, 4).map((line, i) => (
                         <p key={i} className="mt-1">
