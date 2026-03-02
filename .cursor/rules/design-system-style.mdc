@@ -1,0 +1,28 @@
+---
+description: Enforce globals.css-first Apple-minimal neo-brutalist style
+alwaysApply: true
+---
+
+# Design Style Guardrail
+
+Use the visual language introduced in commit `ce2331d` and the primitives in `app/globals.css`.
+
+## Source Of Truth
+
+- Prefer existing design tokens from `:root` in `app/globals.css` (`--background`, `--foreground`, `--palette-*`, `--cta-*`).
+- Reuse existing utility/component classes before creating new one-off styles (`btn-neo-brutalist`, `btn-neo-brutalist-cta`, `romanian-neo-brut`, etc.).
+- Keep color usage token-based (`hsl(var(--token))`) instead of raw hex values in components.
+
+## Style Direction
+
+- Apple-inspired baseline: clean spacing, restrained typography, clear hierarchy, minimal visual noise.
+- Essentialist composition: fewer elements, stronger intent, no decorative complexity without purpose.
+- Neo-brutalist accents: sharp edges, visible borders, bold offset shadows, high-contrast highlights.
+- Balance matters: keep most layouts calm/minimal; apply neo-brutal accents to CTA, tags, badges, and emphasis surfaces.
+
+## Implementation Rules
+
+- Prefer Tailwind utility classes + shared classes in `globals.css`; avoid inline style objects unless strictly needed.
+- Keep interactions simple and tactile (small translate + shadow shifts on hover/active).
+- Use `font-heading` for headings and preserve current `Inter` + `Sora` pairing.
+- Do not introduce a second visual system that conflicts with existing tokens, radii, or shadow language.
