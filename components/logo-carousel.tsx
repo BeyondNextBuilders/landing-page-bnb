@@ -35,7 +35,7 @@ export function LogoCarousel() {
         <div className="absolute inset-0 flex items-center justify-center">
           <p className="text-center text-xs font-semibold uppercase tracking-wider text-muted-foreground flex items-center gap-2">
             <span className="h-1 w-1 rounded-full bg-hyper-cyan" />
-            Trusted by industry leaders
+            Trusted by 
             <span className="h-1 w-1 rounded-full bg-hyper-cyan" />
           </p>
         </div>

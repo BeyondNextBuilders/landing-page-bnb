@@ -8,7 +8,7 @@ export interface Founder {
 export const founders: Founder[] = [
   {
     name: "Stefan Ignat",
-    role: "Software Developer",
+    role: "Software Engineer",
     image: "/stefan_pozajpeg.jpeg",
     linkedin: "https://www.linkedin.com/in/stefan-i-49a9a2231/",
   },
@@ -20,7 +20,7 @@ export const founders: Founder[] = [
   },
   {
     name: "Alexandru Mititelu",
-    role: "Software Developer",
+    role: "Software Engineer",
     image: "/asm-lkd.jpg",
     linkedin: "https://www.linkedin.com/in/alexandru-mititelu-984141252/",
   },

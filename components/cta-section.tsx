@@ -18,10 +18,10 @@ export function CtaSection() {
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-20">
           {/* Left: Content */}
           <div>
-            <p className="text-sm font-semibold tracking-wider uppercase text-secondary flex items-center gap-2">
+            {/* <p className="text-sm font-semibold tracking-wider uppercase text-secondary flex items-center gap-2">
               <span className="h-1 w-1 rounded-full bg-hyper-cyan" />
               {"Let's Build Together"}
-            </p>
+            </p> */}
             <h2 className="mt-3 text-balance text-3xl font-bold leading-[1.2] tracking-tight text-foreground sm:text-4xl lg:text-5xl">
               Ready to Transform Your Business?
             </h2>
@@ -57,7 +57,7 @@ export function CtaSection() {
           </div>
 
           {/* Right: CTA */}
-          <div className="flex flex-col items-center justify-center rounded-xl border border-border bg-muted p-8 text-center">
+          <div className="romanian-neo-brut flex flex-col items-center justify-center rounded-xl border border-border bg-muted p-8 text-center">
             <h3 className="text-lg font-semibold text-foreground">
               Request a Consultation
             </h3>
@@ -66,7 +66,8 @@ export function CtaSection() {
             </p>
             <Button
               asChild
-              className="mt-8 bg-cta text-cta-foreground font-bold px-10 py-3 text-base h-auto shadow-lg shadow-cta/30 hover:bg-cta/85 hover:shadow-xl hover:shadow-cta/40 transition-all"
+              variant="neoCta"
+              className="mt-8 h-auto px-10 py-3 text-base hover:bg-blue-500"
             >
               <Link href="https://calendly.com/office-beyondnextbuilders/30min" target="_blank" rel="noopener noreferrer">
                 Schedule a Call

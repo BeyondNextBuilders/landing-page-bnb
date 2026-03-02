@@ -1,12 +1,18 @@
 import React from "react"
 import type { Metadata } from 'next'
-import { Manrope } from 'next/font/google'
+import { Inter, Sora } from 'next/font/google'
 
 import './globals.css'
 
-const manrope = Manrope({ 
+const inter = Inter({
   subsets: ['latin'], 
-  variable: '--font-manrope',
+  variable: '--font-inter',
+  weight: ['400', '500', '600', '700']
+})
+
+const sora = Sora({
+  subsets: ['latin'],
+  variable: '--font-sora',
   weight: ['400', '500', '600', '700']
 })
 
@@ -25,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} font-sans antialiased`}>{children}</body>
+      <body className={`${inter.variable} ${sora.variable} font-sans antialiased`}>{children}</body>
     </html>
   )
 }

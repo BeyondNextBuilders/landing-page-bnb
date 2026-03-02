@@ -44,7 +44,7 @@ export function Testimonials() {
             Client Stories
           </p>
           <h2 className="mt-3 text-balance text-3xl font-bold leading-[1.2] tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            Trusted by Industry Leaders
+            Trusted by 
           </h2>
         </div>
 

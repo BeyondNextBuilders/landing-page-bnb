@@ -46,6 +46,14 @@
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 196 43% 53%;
+    /* Project palette tokens */
+    --palette-black: 0 0% 0%;
+    --palette-navy: 216 70% 13%;
+    --palette-blue: 217 91% 60%;
+    --palette-yellow: 48 96% 53%;
+    --palette-red: 0 84.2% 60.2%;
+    --palette-cyan: 180 100% 50%;
+    --palette-sand: 33 47% 66%;
   }
 }
 
@@ -56,4 +64,87 @@
   body {
     @apply bg-background text-foreground;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* User Created Styles */
+  .btn-neo-brutalist {
+    display: inline-block;
+    border: 2px solid hsl(var(--palette-black));
+    background: #fff;
+    padding: 0.125rem 0.5rem;
+    font-weight: 600;
+    color: hsl(var(--palette-black));
+    box-shadow:
+      3px 3px 0 0 hsl(var(--palette-black)),
+      6px 6px 0 0 hsl(var(--palette-navy)),
+      9px 9px 0 0 hsl(var(--palette-yellow)),
+      12px 12px 0 0 hsl(var(--palette-red));
+  }
+
+  .romanian-neo-brut {
+    box-shadow:
+      8px 8px 0 0 hsl(var(--palette-blue)),
+      16px 16px 0 0 hsl(var(--palette-yellow)),
+      24px 24px 0 0 hsl(var(--palette-red));
+  }
+
+  .btn-neo-brutalist-black {
+    display: inline-block;
+    border: 2px solid hsl(var(--palette-black));
+    background: #fff;
+    padding: 0.125rem 0.5rem;
+    font-weight: 600;
+    color: hsl(var(--palette-black));
+    box-shadow: 3px 3px 0 0 hsl(var(--palette-black));
+  }
+
+  .btn-neo-brutalist-cta {
+    border-radius: 0;
+    background: #67e8f9;
+    font-weight: 700;
+    color: hsl(var(--cta-foreground));
+    box-shadow: 4px 4px 0 0 #06b6d4;
+    transition:
+      transform 300ms ease,
+      box-shadow 300ms ease,
+      background-color 300ms ease,
+      color 300ms ease;
+  }
+
+  .btn-neo-brutalist-cta:hover {
+    transform: translate(1px, 1px);
+    background: #06b6d4;
+    color: #fff;
+    box-shadow: 2.9px 2.9px 0 0 #67e8f9;
+  }
+
+  .tag-neo-brutalist-danger-animated {
+    display: inline-block;
+    border-right: 2px solid #ef4444;
+    border-bottom: 2px solid #ef4444;
+    background: #fff;
+    padding: 0.125rem 0.5rem;
+    font-weight: 600;
+    color: #ef4444;
+    transform: skewX(-12deg);
+    box-shadow: 3px 3px 0 0 #ef4444;
+    transition:
+      transform 300ms ease-out,
+      box-shadow 300ms ease-out;
+  }
+
+  .tag-neo-brutalist-danger-animated:hover {
+    transform: translate(1px, 0.5px) skewX(0deg);
+    box-shadow: 1px 1px 0 0 #ef4444;
+  }
+
 }

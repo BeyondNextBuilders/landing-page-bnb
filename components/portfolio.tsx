@@ -22,7 +22,7 @@ export function Portfolio() {
             <Link
               key={post.slug}
               href={`/blogs/${post.slug}`}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all hover:shadow-xl hover:shadow-secondary/5"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card shadow-[4px_4px_12px_rgba(15,23,42,0.08)] transition-all hover:shadow-xl hover:shadow-secondary/5"
             >
               <div className="p-6">
                 <div className="flex items-start justify-between gap-4">
