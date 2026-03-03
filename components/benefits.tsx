@@ -48,9 +48,10 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section id="benefits" className="relative bg-primary py-24 lg:py-32">
-      {/* Subtle teal orb */}
+    <section id="benefits" className="relative bg-primary py-24 lg:py-32 overflow-hidden">
+      {/* Decorative background elements */}
       <div className="absolute top-0 right-0 h-72 w-72 rounded-full bg-secondary/10 blur-3xl" />
+      <div className="absolute bottom-20 left-0 h-64 w-64 rounded-full bg-hyper-cyan/5 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
@@ -59,7 +60,8 @@ export function Benefits() {
             <span className="h-1 w-1 rounded-full bg-hyper-cyan" />
             Why Choose Us
           </p>
-          <h2 className="mt-3 text-balance text-3xl font-bold leading-[1.2] tracking-tight text-primary-foreground sm:text-4xl lg:text-5xl">
+          <h2 className="mt-3 text-balance text-3xl font-bold leading-[1.2] tracking-tight text-primary-foreground sm:text-4xl lg:text-5xl flex items-center justify-center gap-3">
+            <span className="h-1.5 w-1.5 rounded-full bg-hyper-cyan" />
             The Beyond Next Builders Advantage
           </h2>
           <p className="mt-4 text-lg font-normal leading-[1.7] text-primary-foreground/60">
@@ -69,20 +71,27 @@ export function Benefits() {
         </div>
 
         {/* Grid */}
-        <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {benefits.map((benefit) => (
-            <div key={benefit.title} className="flex gap-4">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-hyper-cyan/10">
-                <benefit.icon className="h-5 w-5 text-hyper-cyan" />
+            <div
+              key={benefit.title}
+              className="group relative rounded-xl border-2 border-primary-foreground/10 bg-primary-foreground/5 p-6 transition-all duration-300 hover:border-hyper-cyan/40 hover:bg-primary-foreground/10 hover:shadow-[6px_6px_0_0_hsl(var(--hyper-cyan)/0.2)]"
+            >
+              {/* Icon */}
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg border-2 border-hyper-cyan/30 bg-hyper-cyan/10 transition-all duration-300 group-hover:border-hyper-cyan group-hover:bg-hyper-cyan group-hover:shadow-[3px_3px_0_0_hsl(var(--primary-foreground)/0.3)]">
+                <benefit.icon className="h-5 w-5 text-hyper-cyan transition-colors group-hover:text-primary" />
               </div>
-              <div>
-                <h3 className="text-base font-semibold text-primary-foreground">
-                  {benefit.title}
-                </h3>
-                <p className="mt-1.5 text-sm font-normal leading-[1.6] text-primary-foreground/50">
-                  {benefit.description}
-                </p>
-              </div>
+
+              {/* Content */}
+              <h3 className="mt-5 text-base font-bold text-primary-foreground group-hover:text-hyper-cyan transition-colors">
+                {benefit.title}
+              </h3>
+              <p className="mt-2 text-sm font-normal leading-[1.7] text-primary-foreground/50">
+                {benefit.description}
+              </p>
+
+              {/* Decorative corner */}
+              <div className="absolute top-3 right-3 h-2 w-2 rounded-full bg-hyper-cyan/20 transition-colors group-hover:bg-hyper-cyan/60" />
             </div>
           ))}
         </div>
