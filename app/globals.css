@@ -147,4 +147,54 @@
     box-shadow: 1px 1px 0 0 #ef4444;
   }
 
+  /* Neo-brutalist card hover effect */
+  .neo-card {
+    transition: all 0.3s ease;
+    border: 2px solid hsl(var(--border));
+  }
+
+  .neo-card:hover {
+    border-color: hsl(var(--hyper-cyan) / 0.4);
+    box-shadow: 8px 8px 0 0 hsl(var(--hyper-cyan) / 0.15);
+  }
+
+  /* Blog content enhancements */
+  .prose-neo h2 {
+    border-left: 4px solid hsl(var(--hyper-cyan));
+    padding-left: 1rem;
+  }
+
+  .prose-neo blockquote {
+    border-left-color: hsl(var(--hyper-cyan));
+    background: hsl(var(--muted) / 0.5);
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .prose-neo a {
+    color: hsl(var(--hyper-cyan));
+    text-decoration-color: hsl(var(--hyper-cyan) / 0.4);
+  }
+
+  .prose-neo a:hover {
+    color: hsl(var(--secondary));
+  }
+
+  /* Results list styling */
+  .results-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .results-list li::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    background: hsl(var(--hyper-cyan) / 0.6);
+    flex-shrink: 0;
+  }
+
 }
