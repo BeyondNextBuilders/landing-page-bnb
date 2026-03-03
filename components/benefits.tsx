@@ -55,7 +55,7 @@ export function Benefits() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold tracking-wider uppercase text-accent flex items-center justify-center gap-2">
+          <p className="text-sm font-semibold tracking-wider uppercase italic text-[hsl(var(--palette-yellow))] flex items-center justify-center gap-2">
             <span className="h-1 w-1 rounded-full bg-hyper-cyan" />
             Why Choose Us
           </p>
