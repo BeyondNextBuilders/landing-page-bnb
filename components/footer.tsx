@@ -1,7 +1,11 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowUpRight } from "lucide-react"
+import { ArrowUpRight, Linkedin } from "lucide-react"
 import { socials } from "@/lib/socials"
+
+const socialIcons = {
+  LinkedIn: Linkedin,
+}
 
 const footerLinks = {
   Services: [
@@ -58,18 +62,21 @@ export function Footer() {
 
             {/* Social links with neo-brutalist style */}
             <div className="mt-6 flex gap-3">
-              {socials.map((social) => (
-                <Link
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex h-10 w-10 items-center justify-center rounded-lg border-2 border-primary-foreground/20 bg-primary-foreground/5 transition-all duration-300 hover:border-hyper-cyan hover:bg-hyper-cyan hover:shadow-[3px_3px_0_0_hsl(var(--primary-foreground)/0.2)]"
-                  aria-label={social.label}
-                >
-                  <social.icon className="h-4 w-4 text-primary-foreground/60 transition-colors group-hover:text-primary" />
-                </Link>
-              ))}
+              {socials.map((social) => {
+                const IconComponent = socialIcons[social.label as keyof typeof socialIcons]
+                return IconComponent ? (
+                  <Link
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex h-10 w-10 items-center justify-center rounded-lg border-2 border-primary-foreground/20 bg-primary-foreground/5 transition-all duration-300 hover:border-hyper-cyan hover:bg-hyper-cyan hover:shadow-[3px_3px_0_0_hsl(var(--primary-foreground)/0.2)]"
+                    aria-label={social.label}
+                  >
+                    <IconComponent className="h-4 w-4 text-primary-foreground/60 transition-colors group-hover:text-primary" />
+                  </Link>
+                ) : null
+              })}
             </div>
           </div>
 
