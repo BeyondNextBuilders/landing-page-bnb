@@ -56,9 +56,9 @@ export default function BlogsPage() {
                 href={`/blogs/${post.slug}`}
                 className="group relative rounded-xl border-2 border-border bg-card p-6 lg:p-8 transition-all duration-300 hover:border-hyper-cyan/40 hover:shadow-[8px_8px_0_0_hsl(var(--hyper-cyan)/0.15)]"
               >
-                {/* Latest badge for first item */}
+                {/* Latest badge for first item (shifted on lg to avoid overlapping the icon) */}
                 {index === 0 && (
-                  <div className="absolute top-4 right-4 lg:top-6 lg:right-6">
+                  <div className="absolute top-4 right-4 lg:top-6 lg:right-24">
                     <span className="inline-flex items-center gap-1.5 rounded-full bg-hyper-cyan/10 px-3 py-1 text-xs font-semibold text-hyper-cyan border border-hyper-cyan/20">
                       <Sparkles className="h-3 w-3" />
                       Latest
@@ -87,6 +87,7 @@ export default function BlogsPage() {
                       <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </div>
                   </div>
+
                   <div className="mt-1 hidden lg:flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border-2 border-border bg-muted/50 transition-all duration-300 group-hover:border-hyper-cyan group-hover:bg-hyper-cyan group-hover:shadow-[3px_3px_0_0_hsl(var(--palette-black))]">
                     <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
                   </div>
