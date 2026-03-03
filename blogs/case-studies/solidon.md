@@ -4,8 +4,6 @@
 
 ---
 
-## TL;DR
-
 - **Challenge**: Solidon didn’t just need a storefront — they needed a system to run a multi-channel e-commerce operation without daily manual work (price updates, catalog edits, fulfillment steps).
 - **Solution**: We implemented and customized the full framework end-to-end on **PostgreSQL**, then added **PriceTracker** (local DB → all channels), **centralized product management synced across channels**, a **custom website chatbot**, and **operational automations** (including AWS-triggered printing when an order lands). We also integrated **Netopia** for payments and **DPD Courier** for shipping.
 - **Results**:
