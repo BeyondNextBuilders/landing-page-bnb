@@ -10,45 +10,48 @@ import {
 const benefits = [
   {
     icon: Lightbulb,
-    title: "Deep Technical Expertise",
+    title: "ROI-First Delivery",
     description:
-      "Our senior engineers bring decades of combined experience across diverse technology stacks and industries.",
+      "We start from outcomes—revenue, cost savings, and speed—and ship what moves the needle, not feature fluff.",
   },
   {
     icon: Palette,
-    title: "UI/UX-First Approach",
+    title: "Conversion-Ready UX",
     description:
-      "We prioritize intuitive, beautiful interfaces that delight users and drive meaningful engagement.",
+      "UI/UX that’s fast, clear, and designed to drive action—built for real users, not just pretty screenshots.",
   },
   {
     icon: Rocket,
-    title: "Agile & Transparent",
+    title: "Automation That Removes Work",
     description:
-      "Iterative sprints, regular demos, and clear communication ensure you always know where your project stands.",
+      "We connect pricing, inventory, orders, and ops into workflows that run automatically—so your team stops doing busywork.",
   },
   {
     icon: Lock,
-    title: "Security by Design",
+    title: "Reliable Integrations",
     description:
-      "Enterprise-grade security woven into every layer of your application from day one.",
+      "Payments, shipping, marketplaces, CRMs—integrations that don’t break in production and scale with volume.",
   },
   {
     icon: Users,
-    title: "Dedicated Teams",
+    title: "End-to-End Engineering",
     description:
-      "A committed team that becomes an extension of your organization, aligned with your goals.",
+      "No handoffs. We design, build, integrate, deploy, and iterate—so you get momentum instead of blockers.",
   },
   {
     icon: Headphones,
-    title: "Ongoing Support",
+    title: "Long-Term Partner Support",
     description:
-      "Continuous maintenance, monitoring, and optimization long after your product goes live.",
+      "Ongoing improvements, monitoring, and optimizations to keep performance high as your business grows.",
   },
 ]
 
 export function Benefits() {
   return (
-    <section id="benefits" className="relative bg-primary py-24 lg:py-32 overflow-hidden">
+    <section
+      id="benefits"
+      className="relative bg-primary py-24 lg:py-32 overflow-hidden"
+    >
       {/* Decorative background elements */}
       <div className="absolute top-0 right-0 h-72 w-72 rounded-full bg-secondary/10 blur-3xl" />
       <div className="absolute bottom-20 left-0 h-64 w-64 rounded-full bg-hyper-cyan/5 blur-3xl" />
@@ -65,8 +68,8 @@ export function Benefits() {
             The Beyond Next Builders Advantage
           </h2>
           <p className="mt-4 text-lg font-normal leading-[1.7] text-primary-foreground/60">
-            We combine world-class engineering with a relentless focus on
-            business value to deliver solutions that truly make a difference.
+            We build automation-first products that cut manual work, improve
+            conversion, and stay reliable as you scale.
           </p>
         </div>
 
