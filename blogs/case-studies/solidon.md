@@ -84,10 +84,10 @@ We delivered a **PriceTracker** service that:
 
 ### 3) Custom website chatbot integration
 
-We integrated a custom chatbot directly into the website, aligned to their customer journey and product discovery flow.
+We integrated a custom RAG chatbot directly into the website, aligned to their customer journey and product discovery flow.
 
+- Trained on real content provided in the admin dashboard 
 - Embedded cleanly in the storefront  
-- Built to handle real customer questions and guide users faster  
 - Integrated in a way that doesn’t compromise performance or UX  
 
 ---
@@ -131,8 +131,7 @@ To complete the operational flow, we implemented the key commerce integrations:
 
 ## The Outcome
 
-What Solidon got isn’t “a website.”  
-They got an integrated e-commerce engine where:
+Integrated e-commerce engine where:
 
 - Prices stay correct across all channels  
 - Products stay synced automatically  
@@ -142,6 +141,6 @@ They got an integrated e-commerce engine where:
 
 ---
 
-## One-liner version (for website / portfolio)
+## One-liner version 
 
-We built Solidon’s PostgreSQL-based commerce framework and customized it end-to-end, then layered in multi-channel PriceTracker syncing, unified product management, a custom website chatbot, Netopia payments, DPD shipping integration, and AWS-powered order automations like instant printing—turning their storefront into a system that runs itself.
+We built Solidon’s PostgreSQL-based commerce framework and customized it end-to-end, then layered in multi-channel PriceTracker syncing, unified product management, a custom RAG chatbot, Netopia payments, DPD shipping integration, and AWS-powered order automations like instant printing—turning their storefront into a system that runs itself.

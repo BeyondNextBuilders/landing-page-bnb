@@ -63,10 +63,6 @@ export function Benefits() {
             <span className="h-1 w-1 rounded-full bg-hyper-cyan" />
             Why Choose Us
           </p>
-          <h2 className="mt-3 text-balance text-3xl font-bold leading-[1.2] tracking-tight text-primary-foreground sm:text-4xl lg:text-5xl flex items-center justify-center gap-3">
-            <span className="h-1.5 w-1.5 rounded-full bg-hyper-cyan" />
-            The Beyond Next Builders Advantage
-          </h2>
           <p className="mt-4 text-lg font-normal leading-[1.7] text-primary-foreground/60">
             We build automation-first products that cut manual work, improve
             conversion, and stay reliable as you scale.

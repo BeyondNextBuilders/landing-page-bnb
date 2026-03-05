@@ -111,9 +111,6 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-2">
             <span className="h-1 w-1 rounded-full bg-hyper-cyan/60" />
-            <p className="text-xs text-primary-foreground/40">
-              Built with precision and passion
-            </p>
           </div>
         </div>
       </div>
